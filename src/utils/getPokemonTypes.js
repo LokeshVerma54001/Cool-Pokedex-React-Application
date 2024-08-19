@@ -9,7 +9,7 @@ const getPokemonTypes = async(types) => {
             const data = await fetch(types[i].type.url);
             const tdata = await data.json();
             // console.log(tdata);
-            typesImages.push(tdata.sprites['generation-iii'].colosseum.name_icon);
+            typesImages.push(tdata.sprites['generation-vi']['x-y'].name_icon);
             i++;
         }
         // console.log(typesImages);

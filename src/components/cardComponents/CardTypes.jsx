@@ -15,7 +15,7 @@ const CardTypes = ({pokemonInfo}) => {
   return (
     <div className="relative flex w-full justify-center mb-5">
       {types.map((type, index)=>(
-        <img key={index} src={type} alt="type-img" />
+        <img key={index} src={type} alt="type-img" className="w-20 "/>
       ))}
     </div>
   )
