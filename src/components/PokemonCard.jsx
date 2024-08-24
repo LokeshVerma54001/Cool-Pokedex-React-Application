@@ -22,9 +22,8 @@ const PokemonCard = ({index , pokemon }) => {
 
     return (
         <motion.div
-        initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 * index }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0, transition:{duration:0.5, delay: 0.1 * index}}}
         className="relative rounded-lg flex flex-col items-center">
             <div className="h-2/3 bottom-0 rounded-lg absolute bg-green-500 w-full"></div>
             {/* <div className="size-72 bg-green-300 absolute rounded-full"></div>
