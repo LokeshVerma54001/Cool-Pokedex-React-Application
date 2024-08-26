@@ -13,7 +13,7 @@ const SearchBar = ({search, setSearch}) => {
             <Search size={24} color="indigo"/>
             <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}
                 className=" placeholder:font-bold placeholder:text-blue-500 w-full focus:border-none text-blue-500 font-bold text-xl focus:outline-none"
-                placeholder="Name"
+                placeholder="Name/Id"
             />
         </div>
         <button onClick={handleSubmit} className="bg-yellow-400 border rounded-md text-blue-600 font-bold w-36 h-10 hover:bg-yellow-300">Search</button>
